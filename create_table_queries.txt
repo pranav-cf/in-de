@@ -1,0 +1,15 @@
+
+create table table_global (
+  Name               varchar(255) not null ,
+  Cust_I             varchar(18) not null ,
+  Open_Dt            date not null ,
+  Consul_Dt          date,
+  VAC_ID             char(5),
+  DR_Name            char(255),
+  State              char(5),
+  Country            char(5),
+  DOB                date,
+  FLAG               char(1),
+  constraint uq_Cust_I unique (Cust_I),
+  constraint pk_table_global primary key (Name)
+);
